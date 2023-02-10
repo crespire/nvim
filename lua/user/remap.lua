@@ -2,5 +2,5 @@
 vim.g.mapleader = ' '
 
 -- set explorer short cut
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Open Explorer' })
+vim.keymap.set("n", "<leader>e", vim.cmd.Lex, { desc = 'Toggle File Explorer' })
 
