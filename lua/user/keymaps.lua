@@ -3,6 +3,14 @@ vim.keymap.set('', '<Space>', '<Nop>', opts)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c",
+
 -- Mormal Mode Rebinds
 -- Explorer - should be hijacked by nvim-tree once I get that set up
 vim.keymap.set("n", "<leader>e", ":Lex 30<cr>", { desc = 'Toggle File Explorer' })
@@ -22,8 +30,11 @@ vim.keymap.set('n', '<S-h>', ':bprevious<cr>')
 vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
 
--- Move text up and down
-vim.keymap.set('v', '<A-j>', ":m +1<cr>gv=gv")
-vim.keymap.set('v', '<A-k>', ":m -2<cr>gv=gv")
--- Moving lines up works, but moving down gives "cannot move range into itself"
+-- Move line up and down
+vim.keymap.set('v', '<A-j>', ":m .+1<cr>==", { noremap = true })
+vim.keymap.set('v', '<A-k>', ":m .-2<cr>==", { noremap = true })
+
+-- Move line block up and down
+vim.keymap.set('x', '<A-j>', ":m '>+1<cr>gv=gv", { noremap = true })
+vim.keymap.set('x', '<A-k>', ":m '<-2<cr>gv=gv", { noremap = true })
 
