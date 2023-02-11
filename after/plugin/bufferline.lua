@@ -4,7 +4,7 @@ bufferline.setup{
     numbers = function(opts)
       return string.format('%s|%s', opts.id, opts.raise(opts.ordinal))
     end,
-    separator_style = "padded_slant",
+    separator_style = "thick",
     offsets = {
       {
         filetype = 'NvimTree',
