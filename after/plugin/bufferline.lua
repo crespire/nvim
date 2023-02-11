@@ -7,10 +7,11 @@ bufferline.setup{
     separator_style = "padded_slant",
     offsets = {
       {
-        filetype = 'netrw',
+        filetype = 'NvimTree',
         text = 'File Explorer',
         highlight = 'Directory',
-        text_align = 'left'
+        separator = true,
+        text_align = 'center'
       }
     }
   }

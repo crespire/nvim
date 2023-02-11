@@ -13,7 +13,7 @@ vim.g.maplocalleader = ' '
 
 -- Mormal Mode Rebinds
 -- Explorer - should be hijacked by nvim-tree once I get that set up
-vim.keymap.set("n", "<leader>e", ":Lex 30<cr>", { desc = 'Toggle File Explorer' })
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = 'Toggle File Explorer' })
 
 -- Resize with arrows
 vim.keymap.set('n', '<C-Up>', ':resize +2<cr>')
