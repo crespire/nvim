@@ -6,8 +6,5 @@ vim.opt.termguicolors = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- empty setup using defaults
-require("nvim-tree").setup()
-
 -- override ftplugin markdown style
 vim.g.markdown_recommended_style = 0
