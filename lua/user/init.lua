@@ -1,2 +1,3 @@
 require("user.keymaps")
-require("user.set")
+require("user.options")
+require("user.packer")
