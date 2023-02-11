@@ -1,2 +1,2 @@
-require("user.remap")
+require("user.keymaps")
 require("user.set")
