@@ -74,4 +74,8 @@ return require('packer').startup(function(use)
   }
 
   use { 'nvim-tree/nvim-tree.lua' }
+
+  use {
+    'goolord/alpha-nvim', requires = { 'nvim-tree/nvim-web-devicons' },
+  }
 end)
