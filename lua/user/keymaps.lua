@@ -18,8 +18,8 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = 'Toggle File Ex
 -- Resize with arrows
 vim.keymap.set('n', '<C-Up>', ':resize +2<cr>')
 vim.keymap.set('n', '<C-Down>', ':resize -2<cr>')
-vim.keymap.set('n', '<C-Right>', ':vertical resize -2<cr>')
-vim.keymap.set('n', '<C-Left>', ':vertical resize +2<cr>')
+vim.keymap.set('n', '<C-Right>', ':vertical resize +2<cr>')
+vim.keymap.set('n', '<C-Left>', ':vertical resize -2<cr>')
 
 -- Navigate buffers
 vim.keymap.set('n', '<S-l>', ':bnext<cr>')

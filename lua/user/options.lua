@@ -26,3 +26,6 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 vim.opt.colorcolumn = '80'
+
+vim.opt.foldmethod = "expr"
+vim.foldexpre= "nvim_treesitter#foldexpre()"
