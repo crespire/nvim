@@ -38,3 +38,7 @@ vim.keymap.set('v', '<A-k>', ":m .-2<cr>==", { noremap = true })
 vim.keymap.set('x', '<A-j>', ":m '>+1<cr>gv=gv", { noremap = true })
 vim.keymap.set('x', '<A-k>', ":m '<-2<cr>gv=gv", { noremap = true })
 
+
+-- Toggle Trouble
+vim.keymap.set('n', '<leader>xx', ':TroubleToggle<cr>', { desc = 'Toggle Trouble List' })
+
