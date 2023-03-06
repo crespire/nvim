@@ -82,4 +82,6 @@ return require('packer').startup(function(use)
   use { 'folke/trouble.nvim', requires = 'nvim-tree/nvim-web-devicons' }
 
   use 'folke/lsp-colors.nvim'
+
+  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 end)
