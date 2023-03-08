@@ -9,7 +9,8 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 vim.opt.cursorline = true
-vim.opt.wrap = false
+vim.opt.wrap = true
+vim.opt.textwidth = 80
 
 vim.opt.swapfile = false
 vim.opt.backup = false
